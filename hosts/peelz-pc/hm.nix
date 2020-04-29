@@ -2,6 +2,7 @@
 , config
 , nixpkgs
 , nixpkgs-unstable
+, WUT
 , ...
 }@args:
 
@@ -9,6 +10,8 @@
 # builtins.trace "__nixpkgs in users/peelz__"
 # builtins.trace "nixpkgs=${nixpkgs.lib.version}"
 # builtins.trace "nixpkgs-unstable=${nixpkgs-unstable.lib.version}"
+# FIXME: this causes an infinite recursion as well?
+builtins.trace "WUT=${WUT}"
 {
   imports = [ ./hm-module-test.nix ];
 

@@ -23,6 +23,7 @@ let
       in lib.foldr recursiveUpdate {} [
         userConfig
         # Inject parameters
+        # FIXME: doesn't seem to work; infinite recursion (see comments in hm.nix)
         (if userConfig ? config
           then { config._module.args = specialArgs; }
           else { _module.args = specialArgs; })

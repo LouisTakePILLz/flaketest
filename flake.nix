@@ -22,6 +22,7 @@
         inherit inputs;
         # Let the host know what system arch it's on
         inherit system;
+        WUT = 5;
       } // genAttrs
         # Import & inject all inputs beginning with "nixpkgs"
         (filter
