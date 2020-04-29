@@ -1,0 +1,86 @@
+{
+  "nodes": {
+    "home-manager": {
+      "info": {
+        "lastModified": 1588177146,
+        "narHash": "sha256-9L69nc4Eypc0vIXPbfoyvSjh+h6Gmpl6g34zwZkrPCo="
+      },
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "owner": "louistakepillz",
+        "repo": "home-manager",
+        "rev": "88ee231503cce7591ea7537af7b19d7eba6b3226",
+        "type": "github"
+      },
+      "original": {
+        "owner": "louistakepillz",
+        "ref": "release-20.03-flakes-test",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "info": {
+        "lastModified": 1586701331,
+        "narHash": "sha256-7vLoChJGMCrLJFuORIK4tYILy/k1rwzkOJtC4V2SXdw="
+      },
+      "locked": {
+        "owner": "edolstra",
+        "repo": "nixpkgs",
+        "rev": "23f6739791ea779310ea6bae07f10775631582fd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "ref": "release-19.09",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-unstable": {
+      "info": {
+        "lastModified": 1587880622,
+        "narHash": "sha256-oVUCs8DJqnwh+Im5yZhu3pdDdoy9tCHtiIhlX/6WFG8="
+      },
+      "locked": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "7c399a4ee080f33cc500a3fda33af6fccfd617bd",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "nixos-unstable",
+        "type": "indirect"
+      }
+    },
+    "nixpkgs_2": {
+      "info": {
+        "lastModified": 1588046086,
+        "narHash": "sha256-4m0VaoV/gq9ZAGqUosV6xyxBk2/BLWJh7oelySwOIO8="
+      },
+      "locked": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "365ca1112115598bca7126565184fb89559e1519",
+        "type": "github"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "ref": "release-20.03",
+        "type": "indirect"
+      }
+    },
+    "root": {
+      "inputs": {
+        "home-manager": "home-manager",
+        "nixpkgs": "nixpkgs_2",
+        "nixpkgs-unstable": "nixpkgs-unstable"
+      }
+    }
+  },
+  "root": "root",
+  "version": 5
+}
